@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(Images/man-a.jpg);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+}
+.topnav {
+  overflow: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+  
+    color: rgb(0, 255, 0);
+  }
+  
+  #navbar_logo {
+    background-color: #0afa52;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+.box{
+  position: static;
+  width: 500px;
+  padding: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0, 0, 0, 0.7);
+  
+  text-align: center;
+
+}
+.box a{
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.box a:hover{
+  color: #0afa52;
+}
+.box p{
+  display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  .box h3{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .box input[type = "text"], .box input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  .box input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .box input[type = "submit"]:hover{
+    background: #2ecc71;
+  }
+  /*Sign Up css */
+  .box1{
+  
+    width: 500px;
+    padding: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.7);
+    
+    text-align: center;
+  }
+  .box1 a{
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  .box1 a:hover{
+    color: #0afa52;
+  }
+  .box1 p{
+    display: block;
+      color: #f2f2f2;
+      text-align: center;
+      height: 00px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+    .box1 h3{
+      color: white;
+      text-transform: none;
+      font-weight: 500;
+    }
+    .box1 input[type = "text"], .box1 input[type = "password"], .box1 input[type = "email"]{
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #3498db;
+      padding: 10px 1px;
+      width: 200px;
+      outline: none;
+      color: white;
+      border-radius: 24px;
+      transition: 0.25s;
+    }
+    .box1 input[type = "text"]:focus, .box1 input[type = "password"]:focus, .box1 input[type = "email"]:focus{
+      width: 280px;
+      border-color: #2ecc71;
+    }
+    .box1 input[type = "submit"] {
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #2ecc71;
+      padding: 9px 15px;
+      outline: none;
+      color: white;
+      border-radius: 24px;
+      transition: 0.25s;
+      cursor: pointer;
+    }
+    .box1 input[type = "submit"]:hover{
+      background: #2ecc71;
+    }
+
+    
+    

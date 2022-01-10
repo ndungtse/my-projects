@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1.0">
+        <title>Next Gaming Technology</title>
+        <link rel="stylesheet" a href="styles.css"/>
+        <link rel="stylesheet" a href="http://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLpr0
+        +NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              
+              <script>
+              function myFunction(x) {
+                x.classList.toggle("change");
+              }
+              </script>
+            <div class="navbar_container">
+                <a href="/" id="navbar_logo">
+                    <i class="fas fa-gem"></i>NEXT</a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="/" class="navbar_links">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/tech.html" class="navbar_links">Tech</a> 
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/" class="navbar_links">Products</a>
+                    </li>
+                    <li class="navbar_btn"><a href="/" 
+                        class="button">Sign Up</a></li>   
+                </ul>
+            </div>
+        </nav>
+        <script src="app.js"></script>
+    </body>
+</html>
