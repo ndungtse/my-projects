@@ -1,5 +1,6 @@
-const menu = document.querySelector('#mobile-menu')
-const menulinks = document.querySelector('.navbar__menu')
+
+const menu = document.querySelector('#mobile-menu');
+const menulinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo')
 
 //Display  mobile menu
@@ -37,3 +38,15 @@ if(window.innerWidth <= 768 && menuBars) {
 
 menulinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+function signUp () {
+  document.querySelector('.upform').style.display = "flex"
+}
+function closesignUp () {
+  document.querySelector('.upform').style.display = "none"
+}
+
+window.addEventListener('scroll', ()=> {
+  let current = '';
+  console.log(pageYoffet);
+})

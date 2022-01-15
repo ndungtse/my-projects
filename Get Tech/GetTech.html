@@ -6,6 +6,7 @@
        <title>GetTech</title>
       <link rel="stylesheet" href="GetTechstyle.css"/>
       <script src="https://kit.fontawesome.com/8341b376f5.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="Images/tech1.png">
     </head>
     <body>
         <nav class="navbar">
@@ -18,20 +19,38 @@
                </div>
                <ul class="navbar__menu">
                    <li class="navbar__item">
-                       <a href="#home" class="navbar__links" id="home-page">Home</a>
+                       <a href="#home" class="navbar__links active" id="home-page">Home</a>
                    </li>
                    <li class="navbar__item">
-                       <a href="#about" class="navbar__links" id="about-page">Products</a>
+                       <a href="Products.html" class="navbar__links" id="about-page">Products</a>
                    </li>
                    <li class="navbar__item">
-                       <a href="#services" class="navbar__links" id="services-page">About</a>
+                       <a href="About.html" class="navbar__links" id="services-page">About</a>
                    </li>
                    <li class="navbar__btn">
-                       <a href="#sign-up" class="button" id="signup">Sign Up</a>
+                     <a class="button" onclick="signUp ()">Sign Up</a>
                    </li>
                </ul>
-             </div>
+            </div>
         </nav>
+        <div class="upform">
+            <form action="" method="get" class="signupdiv">
+                  <div class="closeform" onclick="closesignUp ()"><i class="fas fa-times"></i></div>
+                  <h3>Sign Up for GetTech Account</h3>
+                  <label for="firstname">Firstname</label>
+                  <input type="text" name="" placeholder="Firstname" maxlength="30" required>
+                  <label for="lastname">Lastname</label>
+                  <input type="text" name="" placeholder="Lastname" maxlength="30" required>
+                  <label for="mail">E-mail</label>
+                  <input type="email" name="" placeholder="Enter your email" required>
+                  <label for="user">Username</label>
+                  <input type="text" name="" placeholder="Username" maxlength="30" required>
+                  <label for="psw">Password</label>
+                  <input type="password" name="" placeholder="Password (8-16 characters)" minlength="8" maxlength="16"required>
+                  <input type="submit" name="" value="Sign Up">
+                  <p>Already have an account?<a href="Login.html">Sign In</a></p>
+            </form>
+         </div>
         <!--intro section-->
         <div class="intro">
             <div class="intro__container">
@@ -71,7 +90,7 @@
                         <div class="trends__btn"><button>Get It Now</button></div>
                 </div>
                 <div class="trends__card">
-                    <h2>Lenevo 323</h2>
+                    <h2>Dell. XPS 17 (2021)</h2>
                         <p>$1K</p>
                         <div class="trends__btn"><button>Get It Now</button></div>
                 </div>

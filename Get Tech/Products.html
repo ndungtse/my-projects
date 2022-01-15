@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>GetTech</title>
+      <link rel="stylesheet" href="GetTechstyle.css"/>
+      <script src="https://kit.fontawesome.com/8341b376f5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                  <a href="#home" id="navbar__logo"><img src="images/tech-s.png"></a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> 
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                       <li class="navbar__item">
+                           <a href="GetTech.html" class="navbar__links" id="home-page">Home</a>
+                       </li>
+                       <li class="navbar__item">
+                           <a href="Products.html" class="navbar__links active" id="about-page">Products</a>
+                       </li>
+                       <li class="navbar__item">
+                           <a href="About.html" class="navbar__links" id="services-page">About</a>
+                       </li>
+                       <li class="navbar__btn" >
+                           <a class="button"  onload="signUp ()">Sign Up</a>
+                       </li>
+                </ul>
+          </div>
+        </nav> 
+        <div class="upform">
+            <form action="" method="get" class="signupdiv">
+                <div class="closeform" onclick="closesignUp ()"><i class="fas fa-times"></i></div>
+                  <h3>Sign Up for GetTech Account</h3>
+                  <label for="firstname">Firstname</label>
+                  <input type="text" name="" placeholder="Firstname" maxlength="30" required>
+                  <label for="lastname">Lastname</label>
+                  <input type="text" name="" placeholder="Lastname" maxlength="30" required>
+                  <label for="mail">E-mail</label>
+                  <input type="email" name="" placeholder="Enter your email" required>
+                  <label for="user">Username</label>
+                  <input type="text" name="" placeholder="Username" maxlength="30" required>
+                  <label for="psw">Password</label>
+                  <input type="password" name="" placeholder="Password (8-16 characters)" minlength="8" maxlength="16"required>
+                  <input type="submit" name="" value="Sign Up">
+                  <p>Already have an account?<a href="Login.html">Sign In</a></p>
+            </form>
+         </div>
+        <!--Product section-->
+        <div class="products">
+                <div  class="heading-nav2">
+                  <h2>Categories</h2>
+                </div>
+                <nav class="categories">
+                    <div class="nav2-container">
+                        <a href="#products" class="nav-item">All</a>
+                        <a href="#products" class="nav-item">Gaming</a>
+                        <a href="#products" class="nav-item">Multimedia</a>
+                        <a href="#products" class="nav-item">Sports</a>
+                        <a href="#products" class="nav-item">Home equipments</a>
+                        <a href="#products" class="nav-item">Automations</a>
+                        <a href="#products" class="nav-item">AI-supported</a>
+                    </div>
+                    <div class="nav2-search">
+                       <input type="text" class="nav-input" placeholder="search Products"><button class="nav2-btn"><i class="fas fa-search" id="search"></i></button>
+                  </div>
+                </nav>
+                <div class="products__container">
+                    <div class="new-cat">
+                        <h3>New</h3>
+                        <div class="product__wrapper">
+                            <div class="product__card" id="newcard">
+                                <h2>iRobot Roomba i3+ (3550)</h2>
+                                    <p>$489</p>
+                                    <div class="product__btn"><button><a href="#">Get It Now</a></button></div>
+                            </div>
+                            <div class="product__card" id="newcard">
+                                <h2>Wireless light bulb</h2>
+                                    <p>$15</p>
+                                    <div class="product__btn"><button><a href="#">Get It Now</a></button></div>
+                            </div>
+                            <div class="product__card" id="newcard">
+                                <h2>Dell. XPS 17 (2021)</h2>
+                                    <p>$1K</p>
+                                    <div class="product__btn"><button><a href="#">Get It Now</a></button></div>
+                            </div>
+                            <div class="product__card" id="newcard">
+                                <h2>EVGA GeForce RTX 3070 Ti</h2>
+                                    <p>$1K</p>
+                                    <div class="product__btn"><button><a href="#">Get It Now</a></button></div>
+                            </div>
+                            <div class="product__card" id="newcard">
+                                    <div class="product__btn"><button>See more <i class="fas fa-long-arrow-alt-right"></i></button></div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <div class="products__container">
+                    <div class="new-cat">
+                        <h3>Featured</h3>
+                        <div class="product__wrapper">
+                            <div class="product__card">
+                                <h2>Virtual reality Camera</h2>
+                                    <p>$2K</p>
+                                    <div class="product__btn"><button>Get It Now</button></div>
+                            </div>
+                            <div class="product__card">
+                                <h2>Playstation 5</h2>
+                                    <p>$0.5K</p>
+                                    <div class="product__btn"><button>Get It Now</button></div>
+                            </div>
+                            <div class="product__card">
+                                <h2>Dell. XPS 17 (2021)</h2>
+                                    <p>$1K</p>
+                                    <div class="product__btn"><button>Get It Now</button></div>
+                            </div>
+                            <div class="product__card">
+                                <h2>Automatic car</h2>
+                                    <p>$1M</p>
+                                    <div class="product__btn"><button>Get It Now</button></div>
+                            </div>
+                            <div class="product__card" id="newcard">
+                                <div class="product__btn"><button>See more <i class="fas fa-long-arrow-alt-right"></i></button></div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__container">
+                    <div class="new-cat">
+                        <h3>Category-based</h3>
+                        <div class="product__wrapper">
+                            <div class="product__card">
+                                <h2>Virtual reality Camera</h2>
+                                    <p>$2K</p>
+                                    <div class="product__btn"><button>Get It Now</button></div>
+                            </div>
+                            <div class="product__card">
+                                <h2>Playstation 5</h2>
+                                    <p>$0.5K</p>
+                                    <div class="product__btn"><button>Get It Now</button></div>
+                            </div>
+                            <div class="product__card">
+                                <h2>Dell. XPS 17 (2021)</h2>
+                                    <p>$1K</p>
+                                    <div class="product__btn"><button>Get It Now</button></div>
+                            </div>
+                            <div class="product__card">
+                                <h2>Automatic car</h2>
+                                    <p>$1M</p>
+                                    <div class="product__btn"><button>Get It Now</button></div>
+                            </div>
+                            <div class="product__card" id="newcard">
+                                <div class="product__btn"><button>See more <i class="fas fa-long-arrow-alt-right"></i></button></div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+        </div>
+        <!--Footer section-->
+        <div class="footer" id="footer">
+            <div class="footer__links">
+                <div class="footer__link--view">
+                    <div class="footer__link--items">
+                        <h2>About Us</h2>
+                        <a href="/">How it works</a>
+                        <a href="/">Testimonials</a>
+                        <a href="/">Careers</a>
+                        <a href="/">Terms of services</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Contact Us</h2>
+                        <a href="/">Contact</a>
+                        <a href="/">Support</a>
+                        <a href="/">Destinations</a>
+                        <a href="/">Order Now</a>
+                    </div>
+                </div>
+                <div class="footer__link--view">  
+                    <div class="footer__link--items">
+                        <h2>Videos</h2>
+                        <a href="/">Submit Video</a>
+                        <a href="/">Ambassadors</a>
+                        <a href="/">Agency</a>
+                        <a href="/">Product Videos</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Social Media</h2>
+                        <a href="/">Instagram</a>
+                        <a href="/">Facebook</a>
+                        <a href="/">Youtube</a>
+                        <a href="/">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <section class="social__media">
+                <div class="social__media--view">
+                    <div class="footer__logo">
+                        <a href="#home" id="footer__logo"><img src="images/tech-s.png"></a>
+                    </div>
+                    <p class="website__rights">©️ GetTech 2022. All rights reserved</p>
+                    <div class="social__icons">
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fas fa-facebook"></i>
+                        </a>
+                        <a href="/" class="social__icon--link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="/" class="social__icon--link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="/" class="social__icon--link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="/" class="social__icon--link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="GetTech.js"></script> 
+    </body>
+</html>
