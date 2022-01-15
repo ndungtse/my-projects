@@ -48,5 +48,5 @@ function closesignUp () {
 
 window.addEventListener('scroll', ()=> {
   let current = '';
-  console.log(pageYoffet);
+  console.log(pageYoffset);
 })
