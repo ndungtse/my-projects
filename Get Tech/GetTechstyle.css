@@ -860,6 +860,7 @@ padding-bottom: 2rem;
     font-size: 1.5rem;
     background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
     background: linear-gradient(to right, #877c91, #da22ff);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
