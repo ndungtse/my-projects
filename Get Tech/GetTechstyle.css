@@ -137,7 +137,7 @@
     }
 
     .navbar__menu.active {
-        background: #2E3192;
+        background: #5050ee;
         top: 100%;
         opacity: 1;
         transition: all 0.3s ease;
@@ -868,12 +868,15 @@ padding-bottom: 2rem;
 #next{
     color: #fff;
 }
+
+.about {
+    background: linear-gradient(to bottom, #cdd5f7, #8686fa, #cdd5f7, #8383f7, #cdd5f7, #7979f0, #cdd5f7);
+}
 .main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #131313;
 }
 .about-head{
     color: #fff;
@@ -967,9 +970,7 @@ padding-bottom: 2rem;
     background: url(Images/other/phoneshop.jpg);
     background-size: 100%;
 }
-.about1 {
-    background: #131313;
-}
+
 .main--img {
     margin: 10px;
     height: 250px;
@@ -992,14 +993,13 @@ padding-bottom: 2rem;
     font-size: 14rem;
 }
 .policies {
-    background: #131313;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .policies h2 {
-    color: #fff;
+    color: #1e35ff;
     align-items: center;
     justify-content: center;
 }
@@ -1046,10 +1046,54 @@ padding-bottom: 2rem;
     justify-content: center;
 }
 .icon-descript a{
-    color: #fff;
+    color: #1e35ff;
     text-decoration: none;
     align-items: center;
     justify-content: center;
+}
+.icon-descript a:hover{
+    text-decoration:underline  #1e35ff;
+}
+@media screen and (max-width: 1000px) {
+    .main--img, .main--img1, .main__img--card{
+        width: 300px;
+        height: 200px; 
+    }
+    .main__content{
+        margin-top: 2%;
+    }
+    .main__content h2,  .main__content p{
+        font-size: 1.2rem;
+    }
+    .main__btn{
+        margin-top: 3%;
+        width: 130px;
+    }
+    .main__btn a{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    .main__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__content{
+        align-items: center;
+        justify-content: center;
+    }
+    .main__content h2, .main__content p{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 320px) {
+    .main--img, .main--img1, .main__img--card{
+        width: 250px;
+        height: 180px; 
+    }
 }
 .upform {
     display: none;
@@ -1118,6 +1162,6 @@ padding-bottom: 2rem;
     cursor: pointer;
 }
 .fa-times:hover {
-    color: rgb(255, 0, 0);
+    color: #ff0000;
 }
 
