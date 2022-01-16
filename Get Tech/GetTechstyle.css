@@ -5,6 +5,9 @@
     font-family: 'Kumbh Sans', sans-serif;
     scroll-behavior: smooth;
 }
+body{
+    background-color: #131313;
+}
 
 .navbar {
     background: #5050ee;
@@ -112,7 +115,7 @@
     transition: 0.3s ease;
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 760px){
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -182,6 +185,11 @@ padding-bottom: 2rem;
     height: 80px;
     width:80%;
     margin: 0;
+}
+.modes{
+    position: absolute;
+    top: -11%;
+    left: 41%;
 }
 
 #mobile-menu {
@@ -368,7 +376,7 @@ padding-bottom: 2rem;
 /*trend css*/
 
 .trendings {
-    background: linear-gradient(to bottom,#ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff);
+    background: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -639,7 +647,7 @@ padding-bottom: 2rem;
 /*Products css*/
 /*nav2*/
 .products {
-    background: linear-gradient(to bottom,#ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff);
+    background: transparent;
 }
 .heading-nav2{
     display: flex;
@@ -870,7 +878,7 @@ padding-bottom: 2rem;
 }
 
 .about {
-    background: linear-gradient(to bottom, #cdd5f7, #8686fa, #cdd5f7, #8383f7, #cdd5f7, #7979f0, #cdd5f7);
+    background: transparent;
 }
 .main {
     display: flex;
@@ -1141,8 +1149,17 @@ padding-bottom: 2rem;
 }
 .signupdiv input[type="submit"]{
     width: 100px;
+    background: linear-gradient(to right, #ba15e4, #b9bae9);
+    border-radius: 4px;
+    color: rgb(253, 253, 253);
+    border: none;
     align-items: center;
     justify-content: center;
+}
+.signupdiv input[type="submit"]:hover{
+    background: linear-gradient(to right, #ba15e4, #b9bae9);
+    color: rgb(253, 253, 253);
+    cursor: pointer;
 }
 .signupdiv a{
     margin-left: 15px;
@@ -1163,5 +1180,22 @@ padding-bottom: 2rem;
 }
 .fa-times:hover {
     color: #ff0000;
+}
+
+.navbar__icon{
+    margin-left: 20px;
+}
+.fa-sun{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.fa-moon{
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+}
+.modes {
+    display: flex;
 }
 

@@ -1,7 +1,15 @@
 
+function lightMode () {
+  document.body.style.background= " linear-gradient(to bottom,#ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff)"
+}
+function darkMode () {
+  document.body.style.background= "#131313"
+}
 const menu = document.querySelector('#mobile-menu');
 const menulinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo')
+const addLight = document.querySelector('.sun')
+const addDark = document.querySelector('.moon')
 
 //Display  mobile menu
 const mobileMenu = () => {
@@ -27,7 +35,7 @@ var myIndex = 0;
    setTimeout(slideshow, 2000); // Change image every 2 seconds
  }
 
- //class mobile Menu when clicking on a menu item
+ //close mobile Menu when clicking on a menu item
 const hideMobileMenu = () => {
   const menuBars = document.querySelector('.is-active');
 if(window.innerWidth <= 8 && menuBars) {
@@ -38,6 +46,8 @@ if(window.innerWidth <= 8 && menuBars) {
 
 menulinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+addDark.addEventListener('click', hideMobileMenu);
+addLight.addEventListener('click', hideMobileMenu);
 
 function signUp () {
   document.querySelector('.upform').style.display = "flex"
@@ -48,4 +58,4 @@ function closesignUp () {
 
 window.onscroll = function (e) {
   console.log(window.scrollY); // Value of scroll Y in px
-};
+}; 

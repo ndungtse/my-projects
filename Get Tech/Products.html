@@ -11,28 +11,36 @@
     <body>
         <nav class="navbar">
             <div class="navbar__container">
-                  <a href="#home" id="navbar__logo"><img src="images/tech-s.png"></a>
+                <a href="GetTech.html" id="navbar__logo"><img src="images/tech-s.png"></a>
                 <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span> 
+                    <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
                 <ul class="navbar__menu">
-                       <li class="navbar__item">
-                           <a href="GetTech.html" class="navbar__links" id="home-page">Home</a>
-                       </li>
-                       <li class="navbar__item">
-                           <a href="Products.html" class="navbar__links active" id="about-page">Products</a>
-                       </li>
-                       <li class="navbar__item">
-                           <a href="About.html" class="navbar__links" id="services-page">About</a>
-                       </li>
-                       <li class="navbar__btn" >
-                           <a class="button"  onload="signUp ()">Sign Up</a>
-                       </li>
+                    <li class="navbar__item">
+                        <a href="GetTech.html" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Products.html" class="navbar__links active" id="about-page">Products</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="About.html" class="navbar__links">About</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a class="button" onclick="signUp ()">Sign Up</a>
+                    </li>
+                    <div class="modes">
+                     <li class="navbar__icon" >
+                         <a title="light mde" class="sun"  onclick="lightMode ()"><i class="fas fa-sun"></i></a>
+                     </li>
+                     <li class="navbar__icon" >
+                         <a title="dark mode" class="sun"  onclick="darkMode ()"><i class="fas fa-moon"></i></a>
+                     </li>
+                 </div>
                 </ul>
-          </div>
-        </nav> 
+            </div>
+        </nav>
         <div class="upform">
             <form action="" method="get" class="signupdiv">
                 <div class="closeform" onclick="closesignUp ()"><i class="fas fa-times"></i></div>
