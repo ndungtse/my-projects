@@ -18,7 +18,7 @@ body{
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 99;
 }
 
 .navbar__container {
@@ -144,7 +144,7 @@ body{
         top: 100%;
         opacity: 1;
         transition: all 0.3s ease;
-        z-index: 99;
+        z-index: 98;
         height: 60vh;
         font-size: 1.6rem;
     }
@@ -794,6 +794,9 @@ padding-bottom: 2rem;
 .product__card:nth-child(5) {
     background: transparent;
 }
+.product__card:nth-child(5) button {
+    background: #0949fa;
+}
 
 .product__card h2 {
    text-align: center;
@@ -1187,7 +1190,7 @@ padding-bottom: 2rem;
 }
 .fa-sun{
     font-size: 2rem;
-    color: white;
+    color: rgb(181, 200, 252);
     cursor: pointer;
 }
 .fa-moon{
@@ -1198,4 +1201,14 @@ padding-bottom: 2rem;
 .modes {
     display: flex;
 }
-
+.preloader{
+    background: #000000 url(Images/other/load2.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+iframe {
+    display: none;
+}

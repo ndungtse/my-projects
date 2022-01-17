@@ -59,3 +59,9 @@ function closesignUp () {
 window.onscroll = function (e) {
   console.log(window.scrollY); // Value of scroll Y in px
 }; 
+
+var loader = document.querySelector('.preloader');
+
+window.addEventListener("load", function() {
+  loader.style.display = "none"
+})
