@@ -1,6 +1,6 @@
 
 function lightMode () {
-  document.body.style.background= " linear-gradient(to bottom,#ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff)"
+  document.body.style.background= " linear-gradient(to bottom,#ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee)"
 }
 function darkMode () {
   document.body.style.background= "#131313"
