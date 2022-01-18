@@ -912,8 +912,7 @@ padding-bottom: 2rem;
 .main__content h2 {
     font-size: 1.5rem;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: #4254f3;
 }
 
 .main__content p {
@@ -1135,7 +1134,7 @@ padding-bottom: 2rem;
     color: #fff;
 }
 .signupdiv a{
-    color: rgb(14, 34, 218);
+    color: #000000;
     text-decoration: none;
 }
 .signupdiv input{
@@ -1158,16 +1157,32 @@ padding-bottom: 2rem;
     justify-content: center;
 }
 .signupdiv input[type="submit"]:hover{
-    background: linear-gradient(to right, #ba15e4, #b9bae9);
+    background: #1e35ff;
     color: rgb(253, 253, 253);
     cursor: pointer;
 }
+.signupdiv input[type="submit"]:after{
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #1e35ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+} 
+.signupdiv input[type="submit"]:after:hover{
+    width: 100%;
+    background: #1e35ff;
+} 
 .signupdiv a{
     margin-left: 15px;
-    transition: 0.3s ease-in;
+    transition: 0.3s;
 }
 .signupdiv a:hover{
-    transform: scale(1.2);
+    font-weight: bold;
+    color: #00b8f0
 }
 .closeform {
     position: relative;
@@ -1198,15 +1213,4 @@ padding-bottom: 2rem;
 }
 .modes {
     display: flex;
-}
-.preloader{
-    background: #000000 url(Images/other/load2.gif) no-repeat center center;
-    background-size: 30%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-iframe {
-    display: none;
 }
