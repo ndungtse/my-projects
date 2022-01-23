@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>CSS hr tag, div line</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	html,body{/*html for FF Moz NS7 OP */
+	text-align:center; /*IE 5 IE 5.5*/
+	margin:0;/* no margins body */
+	padding:0;/* no padding body
+	height:100%;*/
+	width:100%;
+	}
+	
+	/* general */
+	div,p,span,b,a,pre,hr{
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	/*font-size:.9em; weg */
+	color:#ffffff;
+	margin:0em;
+	padding:0em;
+	text-align:left;/* to get text back to the left*/
+	}
+	
+	.xhr,.xhr100{
+	background:#ff8c00;/*NS FF OP */
+	color:#ff8c00;/*IE*/
+	border:none;/*FF NS OP*/
+	height:1px;/*FF NS OP*/
+	width: 98%;
+	margin:0 auto;
+	text-align:center;/*IE*/
+	}
+	head+body .xhr{margin-top:12px;}
+	
+	.xhr100{
+	height:100px;
+	background:#ff8c00;/*NS FF OP */
+	color:#ff8c00;/*IE*/
+	border:10px solid #daa520;/*IE FF NS OP*/
+	}
+	
+	hr{margin:0 auto 0 auto;text-align:center;}
+	
+	/*div lines*/
+	.line2 {
+	font-size:0;
+	background:#ff8c00;
+	height:1px;
+    width: 50px;
+	overflow: hidden;
+	margin:0 auto;
+	}
+    .line{
+        display: flex;
+    }
+
+	.line2{background-color:#ffffff;}
+
+	.wl{width: 50%;}
+	
+	.cf{background:#909090;}
+	</style>
+	<style type="text/css">
+	.b{border-color:#b4b4b4;}
+	.pos{margin:1em 0 0 0em;}
+	</style>
+</head>
+<body class="cf">
+
+
+<p class="pos p">std. hr tag</p>
+<hr />
+<p><br /></p>
+<hr class="wl" />
+<p class="pos p">hr tag 1px heigh</p>
+<hr class="xhr" />
+<hr class="xhr" />
+<hr class="xhr" />
+<hr class="xhr" />
+<p class="pos p">hr tag 100px heigh + border</p>
+<hr class="xhr100" />
+<p><br /><br /></p>
+<p class="p">div lines</p><div class="line"><div class="line2"></div><div class="pa"><p>Hello000</p></div>
+
+<!-- <p><br /></p>
+<div class="line2 wl"></div>
+<p><br /></p>
+<div class="line wl"></div>
+<p><br /></p>
+<div class="line2"></div>
+<p><br /></p> -->
+</body>
+</html>
+
+
+

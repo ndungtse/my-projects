@@ -1,5 +1,96 @@
 <!DOCTYPE html>
-   <head>
-       
-   </head>
+
+  <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Share Me</title>
+     <link rel="stylesheet" href="style.css">
+     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     <script src="https://kit.fontawesome.com/8341b376f5.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+     <div class="share">
+        <nav class="navbar-container close">
+           <div class="searchlogo">
+              <div class="withlogo">
+                 <div class="logo"><img src="Images/tech1.png"></div>
+                 <p>Share Me</p>
+                <!--  <div>Everything</div> -->
+                <i id="expand" class="fas fa-chevron-right"></i>
+              </div>
+              <div class="search">
+                 <li class="search-box">
+                     <i id="search" class='bx bx-search icon'></i>
+                     <input id="input" type="text" placeholder="Search...">
+                 </li>
+              </div>
+           </div>
+           <ul class="navbar-content">
+              <li class="navlinks">
+                 <a href="#" class="links">
+                  <i id="icon" class='bx bx-home icon' ></i>
+                  <span class="text nav-text">Home</span></a>
+              </li>
+              <li class="navlinks">
+                 <a href="#" class="links">
+                  <i id="icon" class='bx bx-user icon' ></i>
+                  <span id="text" class="text nav-text">Profile</span></a>
+              </li>
+              <li class="navlinks">
+                 <a href="#" class="links">
+                  <i id="icon" class='bx bx-message icon' ></i>
+                  <span class="text nav-text">Messages</span></a>
+              </li>
+              <li class="navlinks">
+                 <a href="#" class="links">
+                  <i id="icon" class='bx bx-bell icon'></i>
+                  <span class="text nav-text">Notifications</span></a>
+              </li>
+              <li class="navlinks">
+                 <a href="#" class="links">
+                  <i id="icon" class='bx bx-building-house icon' ></i>
+                  <span class="text nav-text">Hubs</span></a>
+              </li>
+           </ul>
+           <div class="adjust">
+              <li class="adjust-item">
+                 <div class="sun-moon">
+                     <i id="mode" class='bx bx-moon icon moon'></i><!-- 
+                     <i class='bx bx-sun icon sun'></i> -->
+                 </div>
+                 <span class="mode-text text">Dark mode</span>
+                 <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+               </li>
+
+              <li class="adjust-item">
+                     <a href="#" class="themes">
+                     <i id="slider" class='bx bx-slider icon' ></i>
+                     <span class="text nav-text">Settings</span>
+                 </a>
+              </li>
+              <li class="adjust-item">
+                 <a href="#" class="leave">
+                     <i id="logout" class='bx bx-log-out icon' ></i>
+                     <span class="text nav-text">Logout</span>
+                 </a>
+              </li>
+            </div>
+        </nav>
+
+        <section class="home">
+         <div class="text">Dashboard Sidebar</div>
+     </section>
+     </div><!-- 
+     <div class="main">
+        <div class="main-contents">
+
+        </div> -->
+     </div>
+     <script src="app.js"></script>
+  </body>
+
 </html>

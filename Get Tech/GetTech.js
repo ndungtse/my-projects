@@ -49,12 +49,17 @@ navLogo.addEventListener('click', hideMobileMenu);
 addDark.addEventListener('click', hideMobileMenu);
 addLight.addEventListener('click', hideMobileMenu);
 
+var signupBtn = document.querySelector('.button')
+
 function signUp () {
   document.querySelector('.upform').style.display = "flex"
+  document.querySelector('.navbar').style.display= "none"
 }
 function closesignUp () {
   document.querySelector('.upform').style.display = "none"
+  document.querySelector('.navbar').style.display= "flex"
 }
+
 
 window.onscroll = function (e) {
   console.log(window.scrollY); // Value of scroll Y in px
