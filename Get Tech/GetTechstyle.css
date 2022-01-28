@@ -416,6 +416,7 @@ padding-bottom: 2rem;
     color: black;
     background: url(Images/playstation.jpg) ;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .trends__card:nth-child(1) {
