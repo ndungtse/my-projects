@@ -182,6 +182,8 @@ body{
 }
 .cont-img img{
     width: 100%;
+    animation-name: move;
+    animation-duration: 4s;
 }
 .cont-desc{
     width: 100%;
@@ -215,23 +217,29 @@ body{
     color: red;
 }
 .side{
+    display: flex;
+    flex-direction: column;
     width: 30%;
     background-color: #fff;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
 }
 .side-view{
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 30%;
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    top: 0;
+    width: 28%;
     height: 100%;
     border-radius: 60px 0px 0px 0px;
-    background-color: #F7F9FC;
+    background-color: #edf1f8;
     z-index: 6;
+    position:fixed;
+    top:0;
 }
 .topside{
     top: 0;
@@ -239,28 +247,33 @@ body{
     margin-top: 50px;
     width:100%;
     align-items: center;
-}/*
+}
 .input-search{
+    display: flex;
     margin-left: 20px;
     width: 250px;
-    background-color: #fff;
+    background-color: var(--icon-hover);
     height: 40px;
     align-items: center;
+    align-items: center;
     justify-content: center;
+    border: 1px solid #d0d2d6;
     border-radius: 20px;
 }
 .input-search input{
     margin-left: 20px;
-    width: 130px;
+    width: 170px;
     outline: none;
     border:none;
 } 
 .bx-search{
-    transform: translate(40px, 10px);
+    transform: translateX(10px);
 }
 .bell{
+    display: flex;
     margin-left: 30px;
     width: 40px;
+    align-items: center;
     height: 40px;
     border-radius: 30px;
     background-color: #fff;
@@ -268,8 +281,35 @@ body{
     align-items: center;
     justify-content: center;
 }
-.bx-log-out{
-    transform: rotate(90deg);
+.bell:last-child{
+    background-color: #2E4B9C;
 }
-
- */
+.bx-log-out{
+    color: var(--icon-hover);
+    transform: translateY(-2px) rotate(90deg);
+}
+.navlinks a[title="Home"]{
+    color: rgb(87, 58, 58);
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-follow{
+    display: flex;
+    align-items: center;
+}
+.p-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes move {
+    0%   {opacity: 0%;}
+    25%  {opacity: 25%;}
+    50%  {opacity: 50%;}
+    75%  {opacity: 75%;}
+    100% {opacity: 100%;}
+}
