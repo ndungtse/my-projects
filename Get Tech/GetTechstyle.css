@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #131313;
+    background-color: #131313 !important;
 }
 
 .navbar {
@@ -416,7 +416,6 @@ padding-bottom: 2rem;
     color: black;
     background: url(Images/playstation.jpg) ;
     background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 .trends__card:nth-child(1) {
@@ -1193,7 +1192,7 @@ padding-bottom: 2rem;
 }
 .closeform {
     position: relative;
-    top: -4%;
+    top: 1%;
     left: 44%;
 }
 .fa-times {
