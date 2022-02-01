@@ -1,3 +1,4 @@
+/* window.scrollTo(top,document.body.scrollHeight); */
 
 function lightMode () {
   document.body.style.background= " linear-gradient(to bottom,#ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee, #ffffff, #5050ee)"
@@ -70,3 +71,4 @@ var loader = document.querySelector('.preloader');
 window.addEventListener("load", function() {
   loader.style.display = "none"
 })
+

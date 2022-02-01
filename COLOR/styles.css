@@ -665,3 +665,11 @@ transition: 0.3 ease-out;
         width: 100%;
     }
 }
+nav  ul li.active {
+    background-color: #3b49df;
+    border-radius:30px;
+    transition: 0.3s;
+    }
+    nav  ul li.active a {
+    color: #ffffff;
+    }
