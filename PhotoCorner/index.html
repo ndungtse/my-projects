@@ -1,347 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/bos@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   <link rel="stylesheet" href="boxicons-2.1.1/css/boxicons.css">
-    <title>Photo Corner</title> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/bos@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="boxicons-2.1.1/css/boxicons.css">
+  <title>Photo Corner</title>
 </head>
+
 <body>
-    <div class="main-container">
-      <div class="navbar">
-        <div class="nav-contents">
-           <div class="navlogo">
-             <a href="http://"><img src="Images/Rounded Rectangle 2 copy 3.png"></a>
-           </div>
-           <ul class="nav-container container">
-             <li class="navlinks">
-               <a title="Home" href="#" class="links active"><i class="bx bxs-home icon"></i></a>
-             </li>
-             <li class="navlinks">
-               <a title="Message" href="#" class="links"><i class="bx bx-message-rounded-dots icon"></i></a>
-             </li>
-             <li class="navlinks">
-               <a title="Profile" href="#" class="links"><i class="bx bx-user icon"></i></a>
-             </li>
-             <li class="navlinks">
-               <a title="Saved" href="#" class="links"><i class="bx bx-bookmark icon"></i></a>
-             </li>
-             <li class="navlinks">
-               <span></span>
-             </li>
-             <li class="navlinks">
-               <a title="Settings" href="#" class="links"><i class="bx bx-cog icon"></i></a>
-             </li>
-           </ul>
+  <div class="main-container">
+    <div class="navbar">
+      <div class="nav-contents">
+        <div class="navlogo">
+          <a href="http://"><img src="Images/Rounded Rectangle 2 copy 3.png"></a>
         </div>
+        <ul class="nav-container container">
+          <li class="navlinks">
+            <a title="Home" href="javascript:void(0)" class="links active"><i class="bx bxs-home icon"></i></a>
+          </li>
+          <li class="navlinks">
+            <a title="Message" href="javascript:void(0)" class="links"><i
+                class="bx bx-message-rounded-dots icon"></i></a>
+          </li>
+          <li class="navlinks">
+            <a title="Profile" href="javascript:void(0)" class="links"><i class="bx bx-user icon"></i></a>
+          </li>
+          <li class="navlinks">
+            <a title="Saved" href="javascript:void(0)" class="links"><i class="bx bx-bookmark icon"></i></a>
+          </li>
+          <li class="navlinks">
+            <span></span>
+          </li>
+          <li class="navlinks">
+            <a title="Settings" href="javascript:void(0)" class="links" onclick="setFlex()"><i
+                class="bx bx-cog icon"></i></a>
+          </li>
+        </ul>
       </div>
-      <div class="main-side">
-        <div class="main">
-          <div class="fixed-pup">
-           <div class="stories">
-             <div class="story-cont ">
-               <a href="#" ><img src="Images/Oval.png"></a>
-               <a href="#" ><span>You</span></a>
-             </div>
-             <div class="story-cont">
-               <a href="#" ><img src="Images/Bitmap-2.png"></a>
-               <a href="#" ><span>Chiemeka</span></a>
-             </div>
-             <div class="story-cont">
-               <a href="#" ><img src="Images/Bitmap-3.png"></a>
-               <a href="#" ><span>Pamphile</span></a>
-             </div>
-             <div class="story-cont">
-               <a href="#" ><img src="Images/Bitmap.png"></a>
-               <a href="#" ><span>Audrey</span></a>
-             </div>
-             <div class="story-cont">
-               <a href="#" ><img src="Images/other/Bitmap.png"></a>
-               <a href="#" ><span>Chloe</span></a>
-             </div>
-             <div class="story-cont">
-               <a href="#" ><img src="Images/other/Bitmap-2.png"></a>
-               <a href="#" ><span>Channella</span></a>
-             </div>
-             <div class="story-cont">
-               <a href="#" ><img src="Images/other/Bitmap-1.png"></a>
-               <a href="#" ><span>Sam</span></a>
-             </div>
-             <div class="story-cont">
-               <a href="#" ><img src="Images/Bitmap-1.png"></a>
-               <a href="#" ><span>Curry</span></a>
-             </div>
-             <div class="story-cont">
-               <a href="#"><img src="Images/other/Group 18 Copy.png"></a>
-               <a href="#"><span>See all</span></a>
-             </div>
-           </div>
-          </div> 
-          <div class="main-contents ">
-            <div class="time">
-              <p>Timeline</p>
-              <ul class="time-cont">
-                <li class="time-item">
-                  <a href="#" class="t-link">All</a>
-                </li>
-                <li class="time-item">
-                  <a href="#" class="t-link">Following</a>
-                </li>
-                <li class="time-item">
-                  <a href="#" class="t-link">Newest</a>
-                </li>
-                <li class="time-item">
-                  <a href="#" class="t-link">Popular</a>
-                </li>
-              </ul>
-            </div>  
-              <div class="contents">
-                <div class="cont-cont ">
-                  <div class="cont-img ">
-                    <a href="#"><img src="Images/other/Bitmap Copy 2.png "  ></a>
-                  </div>
-                  <div class="cont-desc">
-                    <div class="cont-post">
-                      <img src="Images/subs/Bitmap.svg">
-                      <span id="postname">Ish Kev</span>
-                    </div>
-                    <div class="react">
-                      <div class="react-cont">
-                        <a href="" id="love"><i class='bx bxs-heart'></i></a>
-                        <a><span id="react-spa">129</span></a>
-                      </div>
-                      <div class="react-cont">
-                        <a href="" id="comment"><i class='bx bxs-comment-dots' ></i></a>
-                        <a><span id="react-spa">45</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cont-cont">
-                  <div class="cont-img">
-                    <a href=""><img src="Images/other/Bitmap Copy 3.png"></a>
-                  </div>
-                  <div class="cont-desc">
-                    <div class="cont-post">
-                      <img src="Images/New folder/Bitmap.svg">
-                      <span id="postname">Chanella</span>
-                    </div>
-                    <div class="react">
-                      <div class="react-cont">
-                        <a href="" id="love"><i class='bx bxs-heart'></i></a>
-                        <a><span id="react-spa">129</span></a>
-                      </div>
-                      <div class="react-cont">
-                        <a href="" id="comment"><i class='bx bxs-comment-dots' ></i></a>
-                        <a><span id="react-spa">45</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cont-cont">
-                  <div class="cont-img">
-                    <a href="#"><img src="Images/other/Bitmap-3.png" ></a>
-                  </div>
-                  <div class="cont-desc">
-                    <div class="cont-post">
-                      <img src="Images/subs/Bitmap.svg">
-                      <span id="postname">Chloe</span>
-                    </div>
-                    <div class="react">
-                      <div class="react-cont">
-                        <a href="" id="love"><i class='bx bxs-heart'></i></a>
-                        <a><span id="react-spa">129</span></a>
-                      </div>
-                      <div class="react-cont">
-                        <a href="" id="comment"><i class='bx bxs-comment-dots' ></i></a>
-                        <a><span id="react-spa">45</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cont-cont">
-                  <div class="cont-img">
-                    <a href="#"><img src="Images/other/Bitmap-4.png" ></a>
-                  </div>
-                  <div class="cont-desc">
-                    <div class="cont-post">
-                      <img src="Images/New folder/Bitmap.svg">
-                      <span id="postname">Tizzo Audrey</span>
-                    </div>
-                    <div class="react">
-                      <div class="react-cont">
-                        <a href="" id="love"><i class='bx bxs-heart'></i></a>
-                        <a><span id="react-spa">129</span></a>
-                      </div>
-                      <div class="react-cont">
-                        <a href="" id="comment"><i class='bx bxs-comment-dots' ></i></a>
-                        <a><span id="react-spa">45</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cont-cont">
-                  <div class="cont-img">
-                    <a href="#"><img src="Images/other/Bitmap-5.png" >
-                  </div>
-                  <div class="cont-desc">
-                    <div class="cont-post">
-                      <img id="img-" src="Images/New folder/Bitmap.png">
-                      <span id="postname">Chamberlain</span>
-                    </div>
-                    <div class="react">
-                      <div class="react-cont">
-                        <a href="" id="love"><i class='bx bxs-heart'></i></a>
-                        <a><span id="react-spa">129</span></a>
-                      </div>
-                      <div class="react-cont">
-                        <a href="" id="comment"><i class='bx bxs-comment-dots' ></i></a>
-                        <a><span id="react-spa">45</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cont-cont">
-                  <div class="cont-img">
-                    <a href="#" ><img src="Images/other/Bitmap-6.png" ></a>
-                  </div>
-                  <div class="cont-desc">
-                    <div class="cont-post">
-                      <img id="img-" src="Images/subs/Bitmap.png">
-                      <span id="postname">Chloe</span>
-                    </div>
-                    <div class="react">
-                      <div class="react-cont">
-                        <a href="" id="love"><i class='bx bxs-heart'></i></a>
-                        <a><span id="react-spa">129</span></a>
-                      </div>
-                      <div class="react-cont">
-                        <a href="" id="comment"><i class='bx bxs-comment-dots' ></i></a>
-                        <a><span id="react-spa">45</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    </div>
+    <div class="main-side">
+      <div class="main">
+        <div class="fixed-pup">
+          <div class="stories">
+            <div class="story-cont ">
+              <a href="#"><img src="Images/Oval.png"></a>
+              <a href="#"><span>You</span></a>
+            </div>
+            <div class="story-cont">
+              <a href="#"><img src="Images/Bitmap-2.png"></a>
+              <a href="#"><span>Chiemeka</span></a>
+            </div>
+            <div class="story-cont">
+              <a href="#"><img src="Images/Bitmap-3.png"></a>
+              <a href="#"><span>Pamphile</span></a>
+            </div>
+            <div class="story-cont">
+              <a href="#"><img src="Images/Bitmap.png"></a>
+              <a href="#"><span>Audrey</span></a>
+            </div>
+            <div class="story-cont">
+              <a href="#"><img src="Images/other/Bitmap.png"></a>
+              <a href="#"><span>Chloe</span></a>
+            </div>
+            <div class="story-cont">
+              <a href="#"><img src="Images/other/Bitmap-2.png"></a>
+              <a href="#"><span>Channella</span></a>
+            </div>
+            <div class="story-cont">
+              <a href="#"><img src="Images/other/Bitmap-1.png"></a>
+              <a href="#"><span>Sam</span></a>
+            </div>
+            <div class="story-cont">
+              <a href="#"><img src="Images/Bitmap-1.png"></a>
+              <a href="#"><span>Curry</span></a>
+            </div>
+            <div class="story-cont">
+              <a href="#"><img src="Images/other/Group 18 Copy.png"></a>
+              <a href="#"><span>See all</span></a>
             </div>
           </div>
         </div>
-        <div class="side">
-             <div class="side-view">
-               <div class="topside">
-                 <div class="input-search">
-                   <input type="text" placeholder="Search">
-                   <i class="bx bx-search icon"></i>
-                 </div>
-                 <div class="bell">
-                   <i class="bx bx-bell icon"></i>
-                 </div>
-                 <div class="bell">
-                   <i class="bx bx-log-out icon"></i>
-                 </div>
-               </div>
-               <div class="follow">
-                 <div class="p-follow">
-                   <div class="p-left"><span>People to follow</span></div>
-                   <div class="p-right"><a href="#" >See all</a></div>
-                 </div>
-                 <div class="follow-cont">
-                   <div class="follow-line">
-                     <div class="img">
-                       <div class="img-f"><img src="Images/another/Bitmap.png" alt=""></div>
-                       <div class="img-des"><p>Mohamed Salisu</p><p>@mohamedsalisu</p></div>
-                     </div>
-                     <div class="follow-btn"><a href="#">Follow</a></div>
-                   </div>
-                   <div class="follow-line">
-                     <div class="img">
-                       <div class="img-f"><img src="Images/another/Bitmap.svg" alt=""></div>
-                       <div class="img-des"><p>Mostafa Kabul</p><p>@mostafakabul</p></div>
-                     </div>
-                     <div class="follow-btn"><a href="#">Follow</a></div>
-                   </div>
-                   <div class="follow-line">
-                     <div class="img">
-                       <div class="img-f"><img src="Images/hh/Bitmap.svg" alt=""></div>
-                       <div class="img-des"><p>Milley Page</p><p>@milleypage</p></div>
-                     </div>
-                     <div class="follow-btn"><a class="followed" href="#">Followed</a></div>
-                   </div>
-                 </div>
-                  <div class="navbar__toggle" id="mobile-menu">
-                   <span class="bar"></span> 
-                   <span class="bar"></span>
-                   <span class="bar"></span>
-                 </div>
-               </div>
-               <div class="saved">
-                 <div class="savetop">
-                     <p>You saved</p>
-                     <p><a href="#">See all</a></p>
+        <div class="main-contents ">
+          <div class="time">
+            <p>Timeline</p>
+            <ul class="time-cont">
+              <li class="time-item">
+                <a href="#" class="t-link">All</a>
+              </li>
+              <li class="time-item">
+                <a href="#" class="t-link">Following</a>
+              </li>
+              <li class="time-item">
+                <a href="#" class="t-link">Newest</a>
+              </li>
+              <li class="time-item">
+                <a href="#" class="t-link">Popular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contents">
+            <div class="cont-cont ">
+              <div class="cont-img ">
+                <a href="#"><img src="Images/other/Bitmap Copy 2.png "></a>
+              </div>
+              <div class="cont-desc">
+                <div class="cont-post">
+                  <img src="Images/subs/Bitmap.svg">
+                  <span id="postname">Ish Kev</span>
+                </div>
+                <div class="react">
+                  <div class="react-cont">
+                    <a href="" id="love"><i class='bx bxs-heart'></i></a>
+                    <a><span id="react-spa">129</span></a>
                   </div>
-                   <div class="savedcont">
-                     <div class="contcont">
-                       <img src="Images/other/Bitmap-5.png" alt="">
-                     </div>
-                     <div class="contcont">
-                       <img src="Images/other/Bitmap-5.png" alt="">
-                     </div>
-                     <div class="contcont">
-                       <img src="Images/other/Bitmap-5.png" alt="">
-                     </div>
-                     <div class="contcont">
-                       <img src="Images/other/Bitmap-5.png" alt="">
-                     </div>
-                   </div>
-               </div>
-               <div class="activity">
-                 <div class="l-activity">
-                   <p>Last activity</p>
-                   <p><a href="#">See all</a></p>
-                 </div>
-                 <div class="act-cont">
-                   <div class="acts">
-                     <i class="bx bx-comment-dots icon"></i>
-                     <p>You’ve Comented on Ahmed Mohamed Shot</p>
-                   </div>
-                   <div class="acts">
-                     <i class="bx bx-heart icon"></i>
-                     <p>You’ve Comented on Ahmed Mohamed Shot</p>
-                   </div>
-                   <div class="acts">
-                     <i class="bx bx-bookmark icon"></i>
-                     <p>You’ve Comented on Ahmed Mohamed Shot</p>
-                   </div>
-                 </div>
-               </div>
-             </div>
+                  <div class="react-cont">
+                    <a href="" id="comment"><i class='bx bxs-comment-dots'></i></a>
+                    <a><span id="react-spa">45</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cont-cont">
+              <div class="cont-img">
+                <a href=""><img src="Images/other/Bitmap Copy 3.png"></a>
+              </div>
+              <div class="cont-desc">
+                <div class="cont-post">
+                  <img src="Images/New folder/Bitmap.svg">
+                  <span id="postname">Chanella</span>
+                </div>
+                <div class="react">
+                  <div class="react-cont">
+                    <a href="" id="love"><i class='bx bxs-heart'></i></a>
+                    <a><span id="react-spa">129</span></a>
+                  </div>
+                  <div class="react-cont">
+                    <a href="" id="comment"><i class='bx bxs-comment-dots'></i></a>
+                    <a><span id="react-spa">45</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cont-cont">
+              <div class="cont-img">
+                <a href="#"><img src="Images/other/Bitmap-3.png"></a>
+              </div>
+              <div class="cont-desc">
+                <div class="cont-post">
+                  <img src="Images/subs/Bitmap.svg">
+                  <span id="postname">Chloe</span>
+                </div>
+                <div class="react">
+                  <div class="react-cont">
+                    <a href="" id="love"><i class='bx bxs-heart'></i></a>
+                    <a><span id="react-spa">129</span></a>
+                  </div>
+                  <div class="react-cont">
+                    <a href="" id="comment"><i class='bx bxs-comment-dots'></i></a>
+                    <a><span id="react-spa">45</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cont-cont">
+              <div class="cont-img">
+                <a href="#"><img src="Images/other/Bitmap-4.png"></a>
+              </div>
+              <div class="cont-desc">
+                <div class="cont-post">
+                  <img src="Images/New folder/Bitmap.svg">
+                  <span id="postname">Tizzo Audrey</span>
+                </div>
+                <div class="react">
+                  <div class="react-cont">
+                    <a href="" id="love"><i class='bx bxs-heart'></i></a>
+                    <a><span id="react-spa">129</span></a>
+                  </div>
+                  <div class="react-cont">
+                    <a href="" id="comment"><i class='bx bxs-comment-dots'></i></a>
+                    <a><span id="react-spa">45</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cont-cont">
+              <div class="cont-img">
+                <a href="#"><img src="Images/other/Bitmap-5.png">
+              </div>
+              <div class="cont-desc">
+                <div class="cont-post">
+                  <img id="img-" src="Images/New folder/Bitmap.png">
+                  <span><a href="" id="postname">Chamberlain</a></span>
+                </div>
+                <div class="react">
+                  <div class="react-cont">
+                    <a href="" id="love"><i class='bx bxs-heart'></i></a>
+                    <a><span id="react-spa">129</span></a>
+                  </div>
+                  <div class="react-cont">
+                    <a href="" id="comment"><i class='bx bxs-comment-dots'></i></a>
+                    <a><span id="react-spa">45</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cont-cont">
+              <div class="cont-img">
+                <a href="#"><img src="Images/other/Bitmap-6.png"></a>
+              </div>
+              <div class="cont-desc">
+                <div class="cont-post">
+                  <img id="img-" src="Images/subs/Bitmap.png">
+                  <span id="postname">Chloe</span>
+                </div>
+                <div class="react">
+                  <div class="react-cont">
+                    <a href="" id="love"><i class='bx bxs-heart'></i></a>
+                    <a><span id="react-spa">129</span></a>
+                  </div>
+                  <div class="react-cont">
+                    <a href="" id="comment"><i class='bx bxs-comment-dots'></i></a>
+                    <a><span id="react-spa">45</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!--Setting section
-      <div class="settings">
-        <div class="set-cont">
-          <div class="set-title">
-            <p>Setting</p>
-            <div class="win-act">
-              <i class='bx bx-fullscreen'></i></i><i class="bx bx-x"></i>
+      <div class="side">
+        <div class="side-view">
+          <div class="topside">
+            <div class="input-search">
+              <input type="text" placeholder="Search">
+              <i class="bx bx-search icon"></i>
             </div>
-            <div class="set-view">
-              <div class="set-line">
-                <p>Dark Theme</p><i class='bx bx-toggle-left' ></i>
+            <div class="bell">
+              <i class="bx bx-bell icon"></i>
+            </div>
+            <div class="bell">
+              <i class="bx bx-log-out icon"></i>
+            </div>
+          </div>
+          <div class="follow">
+            <div class="p-follow">
+              <div class="p-left"><span>People to follow</span></div>
+              <div class="p-right"><a href="#">See all</a></div>
+            </div>
+            <div class="follow-cont">
+              <div class="follow-line">
+                <div class="img">
+                  <div class="img-f"><img src="Images/another/Bitmap.png" alt=""></div>
+                  <div class="img-des">
+                    <p>Mohamed Salisu</p>
+                    <p>@mohamedsalisu</p>
+                  </div>
+                </div>
+                <div class="follow-btn"><a href="#">Follow</a></div>
               </div>
-              <div class="set-line">
-                <p>See more</p>
+              <div class="follow-line">
+                <div class="img">
+                  <div class="img-f"><img src="Images/another/Bitmap.svg" alt=""></div>
+                  <div class="img-des">
+                    <p>Mostafa Kabul</p>
+                    <p>@mostafakabul</p>
+                  </div>
+                </div>
+                <div class="follow-btn"><a href="#">Follow</a></div>
+              </div>
+              <div class="follow-line">
+                <div class="img">
+                  <div class="img-f"><img src="Images/hh/Bitmap.svg" alt=""></div>
+                  <div class="img-des">
+                    <p>Milley Page</p>
+                    <p>@milleypage</p>
+                  </div>
+                </div>
+                <div class="follow-btn"><a class="followed" href="#">Followed</a></div>
+              </div>
+            </div>
+            <div class="navbar__toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <div class="saved">
+            <div class="savetop">
+              <p>You saved</p>
+              <p><a href="#">See all</a></p>
+            </div>
+            <div class="savedcont">
+              <div class="contcont">
+                <img src="Images/other/Bitmap-5.png" alt="">
+              </div>
+              <div class="contcont">
+                <img src="Images/other/Bitmap-5.png" alt="">
+              </div>
+              <div class="contcont">
+                <img src="Images/other/Bitmap-5.png" alt="">
+              </div>
+              <div class="contcont">
+                <img src="Images/other/Bitmap-5.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="activity">
+            <div class="l-activity">
+              <p>Last activity</p>
+              <p><a href="#">See all</a></p>
+            </div>
+            <div class="act-cont">
+              <div class="acts">
+                <i class="bx bx-comment-dots icon"></i>
+                <p>You’ve Comented on Ahmed Mohamed Shot</p>
+              </div>
+              <div class="acts">
+                <i class="bx bx-heart icon"></i>
+                <p>You’ve Comented on Ahmed Mohamed Shot</p>
+              </div>
+              <div class="acts">
+                <i class="bx bx-bookmark icon"></i>
+                <p>You’ve Comented on Ahmed Mohamed Shot</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!--Setting section-->
+    <div class="settings" src="settings.html">
+      <div class="set-cont">
+        <div class="set-title">
+          <p>Setting</p>
+          <div class="win-act">
+            <i class='bx bx-fullscreen'></i></i><i class="bx bx-x" onclick="closeFrame()"></i>
+            <div class="closeform" onclick="closesignUp ()"><i class="fas fa-times"></i></div>
+          </div>
+        </div>
+        <div class="set-view">
+          <div class="set-line">
+            <p>Dark Theme</p><i class='bx bx-toggle-left'></i>
+          </div>
+          <div class="set-line">
+            <p>See more</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message  -->
+    <div class="message">
+      <div class="simple-m">
+        
+      </div>
+    </div>
+
     <script type="text/javascript" src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>

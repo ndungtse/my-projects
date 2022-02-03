@@ -228,7 +228,7 @@ body{
     top: 0;
 }
 .side-view{
-
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -412,6 +412,56 @@ body{
 .acts{
     display: flex;
 }
+
+#postname{
+    color: black;
+    text-decoration: none;
+}
 .settings{
-    position: absolute;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    width: 300px;
+    z-index: 10;
+    display: none;
+    border-radius: 14px 14px 14px 0px;
+    background-color: var(--icon-hover);
+    border:  1px solid var(--icon-color);
+}
+.set-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 12px;
+    width: 100%;
+}
+.set-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.win-act{
+    display: flex;
+    align-items: center;
+}
+.win-act .bx{
+    margin-left: 10px;
+    cursor: pointer;
+    transform: translateY(-10px)
+}
+.win-act .bx-x{
+    font-size: 1.4em;
+}
+.set-view{
+    display: flex;
+    flex-direction: column;
+}
+.set-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bx-toggle-left{
+    font-size: 2em;
+    transform: translateY(-10px);
+    cursor: pointer;
 }
