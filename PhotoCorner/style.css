@@ -412,3 +412,6 @@ body{
 .acts{
     display: flex;
 }
+.settings{
+    position: absolute;
+}
