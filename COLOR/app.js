@@ -13,23 +13,23 @@ menu.addEventListener('click', mobileMenu);
 //Show active menu when scorilling
 const highlightMenu = () => {
     const elem = document.querySelector('.highlight');
-    const homeMenu = document.querySelector('.#home-page');
+    const homeMenu = document.querySelector('#home-page');
     const aboutMenu = document.querySelector('#about-page');
     const servicesMenu = document.querySelector('#services-page'); 
     let scrollPos = window.scrollY;
     console.log(scrollPos);
 
     //adds 'highlight' class to my menu items
-    if(window.innerWidth > 960 && scrollPos < 600) {
+    if(window.innerWidth > 960 && scrollPos < 852) {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 1400) {
+    } else if (window.innerWidth > 960 && scrollPos < 1692) {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         servicesMenu.classList.remove('highlight');
         return;
-    } else if(window.innerWidth > 960 && scrollPos < 2345) {
+    } else if(window.innerWidth > 960 && scrollPos < 2645) {
         servicesMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
@@ -56,21 +56,21 @@ navLogo.addEventListener('click', hideMobileMenu);
 
 //active on scraoll
 const section = document.querySelectorAll("div");
-const navLi = document.querySelectorAll(".navbar__item");
-
+const navLi = document.querySelectorAll("nav .navbar__container ul li a");
+/*
 window.onscroll = () => {
   var current = "";
 
-  sections.forEach((section) => {
+  section.forEach((section) => {
     const sectionTop = section.offsetTop;
     if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
+      current = section.getAttribute("class"); }
   });
 
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    if (li.classList.contains(current)) {
-      li.classList.add("active");
+  navLi.forEach((a) => {
+    a.classList.remove("active");
+    if (a.classList.contains(current)) {
+      a.classList.add("active");
     }
   });
-};
+};*/

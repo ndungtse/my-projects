@@ -664,12 +664,12 @@ transition: 0.3 ease-out;
         padding: 10px;
         width: 100%;
     }
-}
-nav  ul li.active {
-    background-color: #3b49df;
+}/* 
+nav  ul li .active {
+    color: #883bdf;
     border-radius:30px;
     transition: 0.3s;
     }
     nav  ul li.active a {
     color: #ffffff;
-    }
+    } */
