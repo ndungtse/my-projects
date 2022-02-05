@@ -49,5 +49,15 @@ function addPosts(){
     const clone = post.cloneNode(true);
     postCont.appendChild(clone);
 }
-window.setTimeout(addPosts, 3000); */
-window.onload = closeAll()
+window.setTimeout(addPosts, 3000); 
+window.onload = closeAll()*/
+
+//add message 
+const send = document.querySelector('.send');
+const sender = document.querySelector('.sender');
+function sendCont(){
+
+    const newMess = sender.cloneNode(true);
+    send.appendChild(newMess);
+}
+
