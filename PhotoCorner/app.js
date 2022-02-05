@@ -53,11 +53,26 @@ window.setTimeout(addPosts, 3000);
 window.onload = closeAll()*/
 
 //add message 
-const send = document.querySelector('.send');
-const sender = document.querySelector('.sender');
 function sendCont(){
+    let send = document.querySelector('.send');
+let sp1 = document.createElement("div")
+sp1.setAttribute("class", "speaker1")
+let sp1Cont = document.createElement("div")
+sp1Cont.setAttribute("class", "speaker1-cont")
+let text = document.getElementById("text").value
+if (text===''){
+    alert('Please enter the message')
+}
+else{
+    var textC = document.createTextNode(text);
+}
+let textp = document.createElement("p");
+textp.setAttribute("id", "samptext1")
+textp.appendChild(textC)
+sp1Cont.appendChild(textp);
+sp1.appendChild(sp1Cont);
+send.appendChild(sp1);
 
-    const newMess = sender.cloneNode(true);
-    send.appendChild(newMess);
+    // send.appendChild(newMess);
 }
 

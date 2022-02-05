@@ -695,14 +695,14 @@ body{
     display: flex;
     align-items: center;
 }
-.speker-cont p{
+#samptext{
     color: white;
     margin: 10px 20px;
     padding: 5px 10px;
     background-color: rgb(136, 136, 136);
     border-radius: 20px;
 } 
-.speaker1-cont p{
+#samptext1{
     color: white;
     padding: 5px 10px;
     background-color: blue;
