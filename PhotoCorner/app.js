@@ -1,15 +1,20 @@
 
+
 let settings = document.querySelector('.settings')
 let message = document.querySelector('.message')
 let flex = document.querySelector('#flex')
+let closeSet = document.querySelector('.bx-x')
  function setFlex(){
-     settings.classList.toggle('set-active')
+     if(settings.style.display === 'none'){
+         settings.style.display = 'flex'
+     }
+     else {
+         settings.style.display = 'none'
+        }
 }
 flex.addEventListener('click', setFlex)
+closeSet.addEventListener('click', setFlex)
 
-function closeFrame(){
-    settings.classList.remove('set-active')
-}
 
 function showMess() {
     if(message.style.display==='none'){
@@ -21,7 +26,6 @@ function showMess() {
 }
 function closeAll() {
     message.style.display = 'none' 
-    settings.style.display = 'none'
 }
 
 let theicon = document.querySelector('#toggle-left')
@@ -35,15 +39,15 @@ function theme() {
           theicon.src="Images/toggle-left.png";
       }
 }
-/* 
-var icon = document.getElementById("icon")
+//set home as default 
+localStorage.setItem("home", "light");
 
-icon.onclick = function() {
-    document.body.classList.toggle("dark-theme");
-    if(document.body.classList.contains("dark-theme")){
-        icon.src="Images/sun.png";
-    }
-    else{
-        icon.src= "Images/moon.png";
-    }
-} */
+//adding elements
+/* const post = document.querySelector('.cont-cont');
+const postCont = document.querySelector('.contents')
+function addPosts(){
+    const clone = post.cloneNode(true);
+    postCont.appendChild(clone);
+}
+window.setTimeout(addPosts, 3000); */
+window.onload = closeAll()

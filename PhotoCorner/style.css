@@ -256,6 +256,7 @@ body{
     background-color: var(--dim-light);
     z-index: 6;
     position:fixed;
+    justify-content: space-between;
 }
 .topside{
     top: 0;
@@ -357,6 +358,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .img{
     display: flex;
@@ -369,8 +371,8 @@ body{
     padding:  0 40px;
     font-size:.9em;
 }
-.img-des p:last-child{
-    margin-top: -10px;
+.img-des a:last-child{
+    text-decoration: none;
     color:var(--dim-black);
 }
 .follow-btn{
