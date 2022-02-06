@@ -72,7 +72,6 @@ textp.appendChild(textC)
 sp1Cont.appendChild(textp);
 sp1.appendChild(sp1Cont);
 send.appendChild(sp1);
-
     // send.appendChild(newMess);
 }
 var input = document.getElementById("text");
@@ -82,4 +81,34 @@ input.addEventListener("keyup", function(event) {
    document.querySelector('#send').click();
   }
 });
+
+let sendBtn = document.getElementById("send")
+function clearField() {
+    document.getElementById("text").value = "";
+}
+sendBtn.addEventListener("click", clearField);
+
+//send photos
+function sendPhoto(){
+    let send = document.querySelector('.send');
+let sp1 = document.createElement("div")
+sp1.setAttribute("class", "speaker1")
+let imgUp = document.createElement("div")
+imgUp.setAttribute("class", "imgup")
+sp1.appendChild(imgUp);
+
+send.appendChild(sp1);const image_input = document.querySelector("#file-input");
+image_input.addEventListener("change", function() {
+   const reader = new FileReader();
+   reader.addEventListener("load", () => {
+     const uploaded_image = reader.result;
+     document.querySelector(".imgup").style.backgroundImage = `url(${uploaded_image})`;
+});
+   reader.readAsDataURL(this.files[0]);
+});
+}
+
+
+
+
 

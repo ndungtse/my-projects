@@ -108,7 +108,7 @@
           <div class="contents">
             <div class="cont-cont ">
               <div class="cont-img ">
-                <a href="#"><img src="Images/other/Bitmap Copy 2.png "></a>
+                <a class="img-fluid" href="#"><img src="Images/other/Bitmap Copy 2.png "></a>
               </div>
               <div class="cont-desc">
                 <div class="cont-post">
@@ -546,10 +546,11 @@
           </div>
           <div class="chat-inputs">
             <div class="inputs-icon">
-              <a href=""><i class="bx bxs-plus-circle bl"></i></a>
-              <a href=""><i class="bx bxs-file-plus bl"></i></a>
-              <a href=""><i class="bx bxs-sticker bl"></i></a>
-              <a href=""><i class="bx bxs-file-gif bl"></i></a>
+              <a title="show more options" href=""><i class="bx bxs-plus-circle bl"></i></a>
+              <label for="file-input"><i title="attach file" class="bx bxs-file-plus bl" onclick="sendPhoto()"></i></label>
+              <input type="file" style="display: none;" id="file-input" accept="image/png, image/jpg">
+              <a href=""><i title="send a sticker" class="bx bxs-sticker bl"></i></a>
+              <a href="javascript:void(0)"><i title="add a gif" class="bx bxs-file-gif bl"></i></a>
             </div>
             <div class="input-m">
               <input id= "text" type="text" placeholder="Aa">
@@ -557,7 +558,7 @@
             </div>
             <div class="send-li">
               <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <button id="send" onclick="sendCont()"  href=""><i title="send" class='bx bxs-send'></i></button>
+              <button id="send" onclick="sendCont()"  href="index.html"><i title="send" class='bx bxs-send'></i></button>
             </div>
           </div>
         </div>

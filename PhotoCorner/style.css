@@ -143,6 +143,7 @@ body{
 .main-contents{
     background-color: var(--ligth-color);
     height: 1100px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,7 +196,7 @@ body{
     width: 300px;
 }
 .cont-img img{
-    width: 100%;
+    max-width: 300px;
     animation-name: move;
     animation-duration: 3s;
 }
@@ -727,6 +728,8 @@ body{
 
 .bl{
     font-size: 1.5em;
+    color: rgb(18, 70, 238);
+    cursor: pointer;
 }
 .input-m{
     width: 930px;
@@ -761,4 +764,12 @@ body{
     color: rgb(31, 85, 202);
     border: none;
     background: transparent;
+}
+.imgup{
+        width: 150px;
+        height: 120px;
+        border-radius: 30px;
+        border: 1px solid #2648e2;
+        background-position: center;
+        background-size: cover;
 }
