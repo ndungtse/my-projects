@@ -11,3 +11,10 @@ function strReverser() {
     console.log(reverse);
     newp.innerHTML = reverse;
 }
+var input = document.getElementById("input");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});

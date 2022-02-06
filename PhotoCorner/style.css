@@ -755,5 +755,10 @@ body{
 }
 .bxs-send{
   font-size: 1.5em;
-  transform: translate(80%, 20%);
+}
+.send-li button{
+    transform: translate(80%, 20%);
+    color: rgb(31, 85, 202);
+    border: none;
+    background: transparent;
 }

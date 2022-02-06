@@ -75,4 +75,11 @@ send.appendChild(sp1);
 
     // send.appendChild(newMess);
 }
+var input = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.querySelector('#send').click();
+  }
+});
 
