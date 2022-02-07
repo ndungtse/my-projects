@@ -50,8 +50,7 @@ function addPosts(){
     postCont.appendChild(clone);
 }
 window.setTimeout(addPosts, 3000); 
-window.onload = closeAll()*/
-
+window.onload = closeAll()*/ 
 //add message 
 function sendCont(){
     let send = document.querySelector('.send');

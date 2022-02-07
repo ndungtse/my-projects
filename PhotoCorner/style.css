@@ -773,3 +773,6 @@ body{
         background-position: center;
         background-size: cover;
 }
+.mes-title-left-ico i:hover{
+    color: #2648e2;
+}
