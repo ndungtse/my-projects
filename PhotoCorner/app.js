@@ -49,8 +49,8 @@ function addPosts(){
     const clone = post.cloneNode(true);
     postCont.appendChild(clone);
 }
-window.setTimeout(addPosts, 3000); 
-window.onload = closeAll()*/ 
+window.setTimeout(addPosts, 3000); */ 
+window.onload = closeAll()
 //add message 
 function sendCont(){
     let send = document.querySelector('.send');
@@ -107,6 +107,14 @@ image_input.addEventListener("change", function() {
 });
 }
 
+function showPasw() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
 
 
 
