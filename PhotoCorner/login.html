@@ -13,7 +13,7 @@
 </head>
 
 <body class="body1">
-    <form action="" class="loginform" method="GET" autocomplete="off">
+    <form action="" class="loginform" method="GET" autocomplete="off"  onsubmit="return submit()" required>
         <div class="login">
             <div class="logo-login">
                 <i class="bx bxs-camera icon"></i>
@@ -26,14 +26,14 @@
                 
               </div> -->
             <div class="login-conts">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Enter your username">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password">
+                <input type="text" name="username" id="username">
+                <label for="username" id="label1">Username</label>
+                <input type="password" id="password">
+                <label for="password" id="label2">Password</label>
                 <div class="showpsw"><input class="form-check-input" id="exampleCheck1" type="checkbox" 
                     onclick="showPasw()">Show Password</div>
             </div>
-            <a href="index.html"><input href="index.html" type="button" value="Login" id="login"></a>
+            <a href="index.html"><input onclick="submit()" type="button" value="Login" id="login"></a>
             <div class="signup-to">
                 <div class="forget">
                     <div><a>Forgot your password?</a></div>

@@ -116,6 +116,18 @@ function showPasw() {
     }
   }
 
+  //submit
+  var userName = document.querySelector('#username').value
+  var password = document.querySelector('#password').value
+  function submit() {
+      if(password == "" || password== null){
+        window.alert("input required");
+        return false;
+      }
+        else{
+            window.location.href="index.html";
+        }
+  }
 
 
 
