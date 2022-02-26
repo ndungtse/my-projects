@@ -33,7 +33,7 @@ var myIndex = 0;
    myIndex++;
    if (myIndex > x.length) {myIndex = 1}    
    x[myIndex-1].style.display = "block";  
-   setTimeout(slideshow, 2000); // Change image every 2 seconds
+   setTimeout(slideshow, 2000); 
  }
 
  //close mobile Menu when clicking on a menu item
