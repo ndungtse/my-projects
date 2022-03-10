@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont{
+    background-color: #ffffe6;
+    min-height: 80vh;
+}
+.form{
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
+}
+.row{
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+}
+.row input:not(.row input[type=radio]){
+    width: 65%;
+    height: 30px;
+}
+.row label{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    color: rgb(0, 0, 0);
+    vertical-align: top;
+    /* background-color: #00f; */
+    height: 45px;
+}
+.radio{
+    width:70%;
+}
+.radio input{
+    display: inline;
+}
+.row select{
+    width: 65%;
+}
+@media only screen and (max-width: 600px) {
+    .form{
+        width: 95%;
+    }
+    .row label{
+        display: block;
+        width: 100%;
+    }
+    .row input[type = text]{
+        display: block;
+        width: 100%;
+    }
+    .row{
+        height: 100px;
+    }
+    #rowrad{
+        display: block;
+    }
+    .radioi{
+        display: inline;
+    }
+    #rowrad label{
+        width: 30%;
+        display: inline;
+    }
+}

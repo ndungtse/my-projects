@@ -73,25 +73,11 @@ body{
     transition: all 0.35s;
 }
 
-.button:after{
-    position: absolute;
-    content: ' ';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #2E3192;
-    transition: all 0.35s;
-    border-radius: 4px;
-}
 
 .button:hover{
     color: #fff;
 }
 
-.button:after:hover{
-    width: 100%;
-}
 .button {
     display: flex;
     justify-content: center;
