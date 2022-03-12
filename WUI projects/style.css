@@ -68,7 +68,7 @@ body {
 
 .trendings {
   background: transparent;
-  /* display: flex; */
+  margin-top: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,9 @@ body {
   padding: 2rem 1rem;
   /* overflow: hidden; */
 }
-
+.a-trending{
+  margin-top: 20px;
+}
 .trend__title {
   display: flex;
   width: 100%;
@@ -100,6 +102,9 @@ body {
 }
 .navconts::-webkit-scrollbar {
   display: none;
+}
+.trends__wrapper a, .action__wrapper a{
+  text-decoration: none;
 }
 
 .trends__card {
@@ -133,11 +138,12 @@ body {
 
 .trends__card button {
   color: #fff;
-  padding: 14px 24px;
+  padding: 0.5em 0.9em;
   border: none;
+  margin-bottom: 20px;
   outline: none;
   border-radius: 4px;
-  background: #131313;
+  background: #0f142e;
   font-size: 1rem;
 }
 
@@ -156,6 +162,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  color: #fff;
 }
 
 .cat-cont {
@@ -167,6 +174,9 @@ body {
   padding: 0 20px;
   width: 100%;
   align-items: center;
+}
+.cat-card{
+  text-decoration: none;
 }
 
 .cat-card:nth-child(1) {
@@ -189,7 +199,7 @@ body {
   background-repeat: no-repeat;
   background-size: 150%;
 }
-.cat-card:nth-child(2){
+/* .cat-card:nth-child(2){
   background: url(https://www.murphysmultiverse.com/wp-content/uploads/2022/01/redeeminglove.jpg);
   background-size: 150%;
   background-repeat: no-repeat;
@@ -197,7 +207,7 @@ body {
 .cat-card:nth-child(2){
   background: url(https://www.murphysmultiverse.com/wp-content/uploads/2022/01/redeeminglove.jpg);
   background-size: 100%;
-}
+} */
 .cat-card img {
   width: 80%;
 }
@@ -207,6 +217,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
+  font-size: 1.2em;
   background-color: rgba(27, 15, 43, 0.74);
   align-items: center;
 }
@@ -215,13 +226,12 @@ body {
   color: #fff;
   padding: 3px 8px;
   border-radius: 4px;
+  font-size: 1em;
   cursor: pointer;
   border: none;
   transition: all 0.35s;
 }
-.desc button:hover {
-  transform: scale(1.1);
-}
+
 
 /*Action, an, ...cat*/
 .action__wrapper{
@@ -242,6 +252,10 @@ body {
   .action__wrapper{
     grid-template-columns: repeat(3, 1fr);
   }
+  .trends__card p, .trends__card button{
+    font-size: .9em;
+  }
+ 
   .navconts {
     margin-top: 20px;
     display: grid;
@@ -376,6 +390,8 @@ body {
 }
 .social__media--view {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 820px) {
@@ -452,4 +468,30 @@ body {
     .footer {
         clip-path: ellipse(173% 100% at 46.61% 100%);
       }
+}
+
+.News{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 10px;
+}
+.newsdesc a{
+  text-decoration: none;
+  padding:  4px 10px;
+  background-color: rgb(15, 7, 90);
+  color: #fff;
+  transition: all 0.35s;
+}
+.newsholder{
+  display: flex;
+}
+.newsimag{
+  width: 50%;
+  
+}
+.newsdesc{
+  width: 50%;
+
 }
