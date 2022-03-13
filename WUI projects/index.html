@@ -3,119 +3,252 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GetTech</title>
-    <link rel="stylesheet" href="GetTechstyle.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8341b376f5.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="Images/title.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Watch250</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boxicons-2.1.1/css/boxicons.css">
+    <link rel="stylesheet" href="stylesd.css">
 </head>
 
 <body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <i class="bx bxs-movie-play"></i>
+            <h1>Movie250</h1>
+        </a>
+    </header>
     <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" id="navbar__logo"><img src="images/tech-s.png"></a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links active" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="Products.html" class="navbar__links" id="about-page">Products</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="About.html" class="navbar__links" id="services-page">About</a>
-                </li>
-                <li class="navbar__btn">
-                    <a  class="button" onclick="signUp()" onload="hideMobileMenu  () ">Sign Up</a>
-                </li>
-                <div class="modes">
-                    <li class="navbar__icon">
-                        <a title="light mde" class="sun" onclick="lightMode ()"><i class="fas fa-sun"></i></a>
-                    </li>
-                    <li class="navbar__icon">
-                        <a title="dark mode" class="moon" onclick="darkMode ()"><i class="fas fa-moon"></i></a>
-                    </li>
-                </div>
-            </ul>
-        </div>
+        <ul class="navconts">
+            <li class="navitem">
+                <a href="movie.html" class="link active ">Home</a>
+            </li>
+            <li class="navitem">
+                <a href="Action.html" class="link">Action</a>
+            </li>
+            <li class="navitem">
+                <a href="Romance.html" class="link">Romance</a>
+            </li>
+            <li class="navitem">
+                <a href="Comedy.html" class="link">Comedy</a>
+            </li>
+            <li class="navitem">
+                <a href="Adventure.html" class="link">Adventure</a>
+            </li>
+            <li class="navitem">
+                <a href="Animation.html" class="link">Animation</a>
+            </li>
+            <li class="navitem">
+                <a href="News.html" class="link">News</a>
+            </li>
+        </ul>
     </nav>
-    <div class="upform">
-        <form action="" method="get" class="signupdiv">
-            <div class="closeform" onclick="closesignUp ()"><i class="fas fa-times"></i></div>
-            <h3>Sign Up for GetTech Account</h3>
-            <label for="firstname">Firstname</label>
-            <input type="text" name="" placeholder="Firstname" maxlength="30" required>
-            <label for="lastname">Lastname</label>
-            <input type="text" name="" placeholder="Lastname" maxlength="30" required>
-            <label for="mail">E-mail</label>
-            <input type="email" name="" placeholder="Enter your email" required>
-            <label for="user">Username</label>
-            <input type="text" name="" placeholder="Username" maxlength="30" required>
-            <label for="psw">Password</label>
-            <input type="password" name="" placeholder="Password (8-16 characters)" minlength="8" maxlength="16"
-                required>
-            <input type="submit" name="" value="Sign Up">
-            <p>Already have an account?<a href="Login.html">Sign In</a></p>
-        </form>
-    </div>
-    <!--intro section-->
-    <div class="intro">
-        <div class="intro__container">
-            <div class="intro__content">
-                <p id="content">Get it Anywhere</p><br>
-                <p id="description">Introducing a reliable way of purchasing technological products wherever you are.
-                    Get new updates of the products and buy them at low prices</p>
-                <p id="description"></p>
-                <p id="description"></p>
-                <div class="intro__button">
-                    <p class="btn__description">Do you want to get started?</p>
-                    <button class="order__btn"><a href="">Order now</a> </button>
+    <div class="slide">
+        <h2>Trending News</h2>
+        <div class="newcard">
+            <div class="newsholder slide1">
+                <div class="nesimag">
+                    <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/02/Samuel.jpg?q=50&fit=contain&w=1500&h=&dpr=1.5"
+                        alt="">
+                </div>
+                <div class="newsdesc">
+                    <h3>Samuel L. Jackson Fires Back at Filmmakers Slamming Marvel Movies:</h3>
+                    <div class="newscont">
+                        <p>Marvel movie mainstay Samuel L. Jackson had a fiery response to filmmakers criticizing
+                            superhero films.</p>
+                        <p>Don't tell Samuel L. Jackson that Marvel movies aren't cinema.
+                            In recent years, superhero movies have come under fire from filmmakers like Martin Scorsese,
+                            Ridley Scott, and Roland Emmerich, all of whom had negative things to say about the genre
+                            and its impact on Hollywood.
+                            The situation came up while Jackson was a guest on The View, and the actor brushed off their
+                            criticism by suggesting that directors criticizing superhero mo
+                            vies are in actuality just upset that their own films aren't performing as well.</p>
+                    </div>
+                    <a href="">Read More</a>
                 </div>
             </div>
-            <div class="slideshow">
-                <div class="slideshow__container">
-                    <img class="mySlides" src="Images/mclaren.jpg">
-                    <img class="mySlides" src="Images/wallpaperflare.com_wallpaper (1).jpg">
-                    <img class="mySlides" src="Images/wallpaperflare.com_wallpaper (3).jpg">
+            <div class="newsholder slide1">
+                <div class="nesimag">
+                    <img src="https://cdn.onebauer.media/one/media/6227/ce2e/92ff/e998/1efa/7c84/florence-pugh.jpg?format=jpg&quality=80&width=600&ratio=16-9&resize=aspectfill" alt="">
+                </div>
+                <div class="newsdesc">
+                    <h3>Florence Pugh In Talks For Dune: Part Two</h3>
+                    <div class="newscont">
+                        <p>Able to flit between the worlds of massive franchise filmmaking (Black Widow) 
+                            and indie movie land (Midsommar, Little Women) with ease, Florence Pugh is now in talks for 
+                            another giant role. If the deal works out, she'll play Princess Irulan, daughter of Emperor 
+                            Shaddam IV in Dune: Part Two.
+    
+                            Before you start cheering the notion of a Little Women reunion between Pugh and Timothée Chalamet, 
+                            The Hollywood Reporter cautions that the actor is waiting to see the script before any final decision.</p>
+                    </div>
+                    <a href="https://www.empireonline.com/movies/news/florence-pugh-in-talks-for-dune-part-two/" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="newsholder slide1">
+                <div class="nesimag">
+                    <img src="https://cdn.onebauer.media/one/media/622c/85fe/8d5d/eb32/89bd/772c/doctor-strange-header-excl.jpg?format=jpg&quality=80&width=600&ratio=16-9&resize=aspectfill" alt="">
+                </div>
+                <div class="newsdesc">
+                    <h3>Doctor Strange In The Multiverse Of Madness Producer Responds To Professor X And Illuminati Rumours_ Exclusive</h3>
+                    <div class="newscont">
+                        <p>In the wake of Spider-Man: No Way Home, it’s hard to know what’s real anymore. For months and months, Tom Holland, Andrew Garfield 
+                            and Tobey Maguire all flat-out denied that the previous Peter Parkers would turn up in Jon Watts’ third MCU Spider-flick. 
+                            But despite their many straight-faced protestations, it turned out – spoiler warning, but come on, you’ve seen it already right?</p>
+                    </div>
+                    <a href="https://www.empireonline.com/movies/news/doctor-strange-multiverse-of-madness-professor-x-illuminati-rumours-exclusive/" target="_blank">Read More</a>
                 </div>
             </div>
         </div>
     </div>
-    <!--trends-->
     <div class="trendings">
         <div class="trend__title">
-            <h2>Trending</h2>
+            <h2>Trending Movies <i class="bx bxs-chevron-right"></i></h2>
         </div>
         <div class="trends__wrapper">
-            <div class="trends__card">
-                <h2>Virtual reality Camera</h2>
-                <p>$2K</p>
-                <div class="trends__btn"><button>Get It Now</button></div>
-            </div>
-            <div class="trends__card">
-                <h2>Playstation 5</h2>
-                <p>$0.5K</p>
-                <div class="trends__btn"><button>Get It Now</button></div>
-            </div>
-            <div class="trends__card">
-                <h2>Dell. XPS 17 (2021)</h2>
-                <p>$1K</p>
-                <div class="trends__btn"><button>Get It Now</button></div>
-            </div>
-            <div class="trends__card">
-                <h2>Automatic car</h2>
-                <p>$1M</p>
-                <div class="trends__btn"><button>Get It Now</button></div>
-            </div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=mqqft2x_Aa4" class="trends__card">
+                <img src="https://i0.wp.com/ravemotionpictures.com/wp-content/uploads/2022/03/The-Batman-Digital-Release-Date.jpeg?w=1980&ssl=1"
+                    alt="">
+                <p>Batman 2022</p>
+                <div class="trends__btn"><p>Watch Now</p></div>
+            </a>
+            <a target="_blank" href="https://www.goojara.to/mllEvB" class="trends__card">
+                <img src="https://beyondtheposts.net/wp-content/uploads/2022/01/Spider-Man-No-Way-Home-768x432.jpg"
+                    alt="">
+                <p>Spider-Man: No Way Home (2021)</p>
+                <div class="trends__btn"><p>Watch Now</p></div>
+            </a>
+            <a target="_blank" href="https://ww1.goojara.to/mnk4bx" class="trends__card">
+                <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/03/fresh-movie.jpg?q=50&fit=contain&w=750&h=375&dpr=1.5"
+                    alt="">
+                <p>Fresh (2022)</p>
+                <div class="trends__btn"><p>Watch Now</p></div>
+            </a>
+            <a target="_blank" href="https://ww1.goojara.to/mnk4bx" class="trends__card">
+                <img src="https://www.heavenofhorror.com/wp-content/uploads/2022/03/the-weekend-away-netflix.jpg"
+                    alt="">
+                <p>The Weekend Away (2022)</p>
+                <div class="trends__btn"><p>Watch Now</p></div>
+            </a>
+            <a target="_blank" href="https://www.justwatch.com/uk/movie/uncharted" class="trends__card">
+                <img src="https://www.maketechquick.com/wp-content/uploads/2022/02/chrome_6CHRYKnfvm.jpg?ezimgfmt=ng:webp/ngcb3"
+                    alt="">
+                <p>UNCHARTED (2022)</p>
+                <div class="trends__btn"><p>Watch Now</p></div>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=dZRqB0JLizw" class="trends__card">
+                <img src="https://phantom-marca.unidadeditorial.es/784c41f6f46a9ccb90f409c08c3a765e/resize/828/f/webp/assets/multimedia/imagenes/2022/02/12/16446682625264.jpg"
+                    alt="">
+                <p>DEATH ON THE NILE (2022)</p>
+                <div class="trends__btn"><p>Watch Now</p></div>
+            </a>
+            <a target="_blank" href="https://www.netflix.com/title/81115160" class="trends__card">
+                <img src="https://i0.wp.com/spikytv.com/wp-content/uploads/2022/03/Against-the-Ice-2022-Movie-Recap-And-Ending.jpeg?resize=768%2C432&ssl=1"
+                    alt="">
+                <p>AGAINST THE ICE (2022)</p>
+                <div class="trends__btn"><p>Watch Now</p></div>
+            </a>
         </div>
     </div>
-    <!--footer section-->
-    <div class="footer">
+    <div class="trendings">
+        <div class="trend__title">
+            <h2>Comming Soon <i class="bx bxs-chevron-right"></i></h2>
+        </div>
+        <div class="trends__wrapper">
+            <a target="_blank" href="https://www.youtube.com/watch?v=nfKO9rYDmE8" class="trends__card">
+                <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/01/Everything-We-Know-So-Far-About-The-Lost-City.jpg?q=50&fit=contain&w=750&h=375&dpr=1.5"
+                    alt="">
+                <p>The lost city</p>
+                <div class="trends__btn"><p>See Trailer</p></div>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=MknKGdvuYKo" class="trends__card">
+                <img src="https://cdn.gizmostory.com/wp-content/uploads/2021/09/Avatar-2.jpg?strip=all&lossy=1&ssl=1"
+                    alt="">
+                <p>Avatar 2</p>
+                <div class="trends__btn"><p>See Trailer</p></div>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=aWzlQ2N6qqg" class="trends__card">
+                <img src="https://images.thedirect.com/media/article_full/doctor-strange-2-cameos-x-men_8hdbGDT.jpg?imgeng=cmpr_75/"
+                    alt="">
+                <p>Doctor Strange in the Multiverse of Madness</p>
+                <div class="trends__btn"><p>See Trailer</p></div>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=oZ6iiRrz1SYhttps://www.youtube.com/watch?v=oZ6iiRrz1SY"
+                class="trends__card">
+                <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/12/who-is-michael-morbius.jpg?q=50&fit=contain&w=750&h=375&dpr=1.5"
+                    alt="">
+                <p>Morbius</p>
+                <div class="trends__btn"><p>See Trailer</p></div>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=xjDjIWPwcPU" class="trends__card">
+                <img src="https://images.thedirect.com/media/article_full/black-panther-2-shuri-letitia-wright.jpg?imgeng=cmpr_75/"
+                    alt="">
+                <p>Black Panther 2</p>
+                <div class="trends__btn"><p>See Trailer</p></div>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=G5kzUpWAusI" class="trends__card">
+                <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/02/imgonline-com-ua-resize-Zw6UwG0VrY.jpg?q=50&fit=contain&w=750&h=375&dpr=1.5"
+                    alt="">
+                <p>Sonic The hodgehog 2</p>
+                <div class="trends__btn"><p>See Trailer</p></div>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=BofzcDr580s&vl=en" class="trends__card">
+                <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/09/what-we-know-aquaman-2.jpg?q=50&fit=contain&w=750&h=375&dpr=1.5"
+                    alt="">
+                <p>Aquaman 2</p>
+                <div class="trends__btn"><p>See Trailer</p></div>
+            </a>
+        </div>
+    </div>
+    <div class="categories">
+        <h2>Categories</h2>
+        <div class="cat-cont">
+            <a href="Action.html" class="cat-card">
+                <div class="desc">
+                    <p>Action</p>
+                    <div class="trends__btn"><p>Explore</p></div>
+                </div>
+
+            </a>
+            <a href="Romance.html" class="cat-card">
+                <div class="desc">
+                    <p>Romance</p>
+                    <div class="trends__btn"><p>Explore</p></div>
+                </div>
+
+            </a>
+            <a href="Adventure.html" class="cat-card">
+                <div class="desc">
+                    <p>Adventures</p>
+                    <div class="trends__btn"><p>Explore</p></div>
+                </div>
+
+            </a>
+            <a href="Comedy.html" class="cat-card">
+                <div class="desc">
+                    <p>Comedy</p>
+                    <div class="trends__btn"><p>Explore</p></div>
+                </div>
+
+            </a>
+            <a href="Animation.html" class="cat-card">
+                <div class="desc">
+                    <p>Animation</p>
+                    <div class="trends__btn"><p>Explore</p></div>
+                </div>
+
+            </a>
+            <a href="News.html" class="cat-card">
+                <div class="desc">
+                    <p>Other</p>
+                    <div class="trends__btn"><p>Explore</p></div>
+                </div>
+
+            </a>
+        </div>
+    </div>
+    <div class="footer foot1">
         <div class="footer__links">
             <div class="footer__link--view">
                 <div class="footer__link--items">
@@ -150,12 +283,10 @@
                 </div>
             </div>
         </div>
-        <section class="social__media">
+        <div class="social__media">
             <div class="social__media--view">
-                <div class="footer__logo">
-                    <a href="#home" id="footer__logo"><img src="images/tech-s.png"></a>
-                </div>
-                <p class="website__rights">©️ GetTech 2022. All rights reserved</p>
+                <p class="website__rights">&copy;
+                    Watch250 2022. All rights reserved</p>
                 <div class="social__icons">
                     <a href="/" class="social__icon--link" target="_blank">
                         <i class="fas fa-facebook"></i>
@@ -174,9 +305,8 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
-    <script src="GetTech.js"></script>
 </body>
 
 </html>
