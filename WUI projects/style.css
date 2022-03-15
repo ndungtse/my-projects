@@ -12,6 +12,7 @@
 body {
   overflow-x: hidden;
   background-color: var(--color1);
+  
 }
 .header {
   width: 100%;
@@ -242,7 +243,7 @@ body {
   background: url(https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/12/who-is-michael-morbius.jpg?q=50&fit=contain&w=750&h=375&dpr=1.5);
   display: flex;
   flex-direction: column;
-  background-color: #c2c2c1;
+  background-color: #9c9ea1;
   background-size: 150%;
   width: 100%;
   padding: 30% 20%;
@@ -291,6 +292,12 @@ body {
   .trends__wrapper {
     grid-auto-columns: 50%;
   }
+  .cat-card:nth-child(6){
+    background-color: transparent;
+  }
+  .trend__title h2{
+    font-size: 1.1em;
+  }
   .action__wrapper{
     grid-template-columns: repeat(3, 1fr);
   }
@@ -312,6 +319,7 @@ body {
   .trends__wrapper {
     grid-auto-columns: 60%;
   }
+ 
   .action__wrapper{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -523,6 +531,9 @@ body {
   color: rgb(209, 205, 205);
   margin-top: 10px;
 }
+.newscont, .newsdesc h3 {
+  width: 80%;
+}
 .newsdesc{
   display: flex;
   flex-direction: column;
@@ -587,7 +598,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 10px;
-  /* height: 400px; */
   color: #fff;
   align-items: center;
   justify-content: center;
